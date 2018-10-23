@@ -1,0 +1,8 @@
+logs/
+target/
+deployment/
+.gitignore
+.Capstanfile
+.ci.gocd.yaml
+Dockerfile
+README.md

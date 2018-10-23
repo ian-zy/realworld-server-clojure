@@ -1,6 +1,6 @@
 # realworld-server-clojure
 
-FIXME
+Part of RealWorld server implementation: clojure, pedestal
 
 ## Getting Started
 
