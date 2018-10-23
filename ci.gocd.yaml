@@ -1,0 +1,19 @@
+format_version: 3
+pipelines:
+  build_server:
+    group: realworld
+    materials:
+      repo:
+        git: https://github.com/ian-zy/realworld-server-clojure.git
+    environment_variables:
+      DOCKERHUB_USERNAME: codeforger
+    stages:
+      - build:
+          jobs:
+            build:
+              tasks:
+                - exec:
+                    command: bash
+                    arguments:
+                      - -c
+                      - docker build -t $DOCKERHUB_USERNAME/bulletin-board:$GO_PIPELINE_LABEL . -f Dockerfile
