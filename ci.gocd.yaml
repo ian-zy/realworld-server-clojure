@@ -11,6 +11,7 @@ pipelines:
       - build:
           jobs:
             build:
+              elastic_profile_id: "demo-app"
               tasks:
                 - exec:
                     command: bash
